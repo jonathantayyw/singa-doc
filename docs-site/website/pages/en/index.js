@@ -79,7 +79,7 @@ function HomeSplash(props) {
           >
             Get Started
           </a>
-          <span className="index-ctas-github-button">
+          {/* <span className="index-ctas-github-button">
             <iframe
               src="https://ghbtns.com/github-btn.html?user=apache&amp;repo=singa&amp;type=star&amp;count=true&amp;size=large"
               frameBorder={0}
@@ -88,7 +88,19 @@ function HomeSplash(props) {
               height={30}
               title="GitHub Stars"
             />
-          </span>
+          </span> */}
+
+          <a
+            className="github-button" // part of the https://buttons.github.io/buttons.js script in siteConfig.js
+            href={`https://github.com/apache/singa`}
+            data-count-href="/apache/singa/stargazers"
+            data-show-count="true"
+            data-count-aria-label="# stargazers on GitHub"
+            data-size="large"
+            aria-label="Star this project on GitHub"
+          >
+            {"Star"}
+          </a>
         </div>
       </div>
     </div>
@@ -146,7 +158,8 @@ class Index extends React.Component {
                 <h2>Database integration</h2>
                 <p>
                   <MarkdownBlock>
-                  Models are trained with SINGA and can be queried in the RDBMS
+                    Models are trained with SINGA and can be queried in the
+                    RDBMS
                   </MarkdownBlock>
                 </p>
               </div>
@@ -163,7 +176,7 @@ class Index extends React.Component {
                 </p>
               </div>
               <div className="container-2-box">
-                <iconBs.BsDistributeVertical className="icon" /> 
+                <iconBs.BsDistributeVertical className="icon" />
                 <h2>Distributed training</h2>
                 <p>
                   <MarkdownBlock>
@@ -173,7 +186,7 @@ class Index extends React.Component {
                 </p>
               </div>
               <div className="container-2-box">
-                <iconFa.FaCalculator className="icon" /> 
+                <iconFa.FaCalculator className="icon" />
                 <h2>Automatic gradient calculation</h2>
                 <p>
                   <MarkdownBlock>
@@ -184,7 +197,10 @@ class Index extends React.Component {
                 </p>
               </div>
               <div className="container-2-box">
-                <iconFa.FaMemory className="icon" style={{fontSize: "22px"}}/>
+                <iconFa.FaMemory
+                  className="icon"
+                  style={{ fontSize: "22px" }}
+                />
                 <h2>Memory optimization</h2>
                 <p>
                   <MarkdownBlock>
@@ -194,7 +210,7 @@ class Index extends React.Component {
                 </p>
               </div>
               <div className="container-2-box">
-                <iconGr.GrOptimize className="icon" /> 
+                <iconGr.GrOptimize className="icon" />
                 <h2>Parameter optimization</h2>
                 <p>
                   <MarkdownBlock>
@@ -205,7 +221,10 @@ class Index extends React.Component {
                 </p>
               </div>
               <div className="container-2-box">
-                <iconCg.CgArrowsExchangeAlt className="icon" style={{fontSize: "30px"}}/>
+                <iconCg.CgArrowsExchangeAlt
+                  className="icon"
+                  style={{ fontSize: "30px" }}
+                />
                 <h2>Interoperability</h2>
                 <p>
                   <MarkdownBlock>
@@ -236,8 +255,8 @@ class Index extends React.Component {
                 fontWeight: "bold",
               }}
             >
-              SINGA has a well architected software stack and easy-to-use Python interface to improve
-              usability
+              SINGA has a well architected software stack and easy-to-use Python
+              interface to improve usability
             </p>
             <img
               style={{ width: "35%" }}
@@ -254,7 +273,8 @@ class Index extends React.Component {
                 fontWeight: "bold",
               }}
             >
-              SINGA trains the deep learning models which can be queried as stored procedures of the RDBMS
+              SINGA trains the deep learning models which can be queried as
+              stored procedures of the RDBMS
             </p>
             <img
               style={{ width: "35%" }}
