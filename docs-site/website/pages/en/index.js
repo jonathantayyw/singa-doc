@@ -79,7 +79,7 @@ function HomeSplash(props) {
           >
             Get Started
           </a>
-          {/* <span className="index-ctas-github-button">
+	  {/* <span className="index-ctas-github-button">
             <iframe
               src="https://ghbtns.com/github-btn.html?user=apache&amp;repo=singa&amp;type=star&amp;count=true&amp;size=large"
               frameBorder={0}
@@ -89,8 +89,7 @@ function HomeSplash(props) {
               title="GitHub Stars"
             />
           </span> */}
-
-          <a
+	  <a
             className="github-button" // part of the https://buttons.github.io/buttons.js script in siteConfig.js
             href={`https://github.com/apache/singa`}
             data-count-href="/apache/singa/stargazers"

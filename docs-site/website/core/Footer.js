@@ -96,9 +96,9 @@ class Footer extends React.Component {
                 data-count-aria-label="# stargazers on GitHub"
                 aria-label="Star this project on GitHub"
               >
-                {/* {this.props.config.organizationName}/ */}
-                {/* {this.props.config.projectName} */}
-                {'apache/singa'}
+	    	{/* {this.props.config.organizationName}/ */}
+	    	{/* {this.props.config.projectName} */}
+	    	{'apache/singa'}
               </a>
             </div>
             {this.props.config.twitterUsername && (
